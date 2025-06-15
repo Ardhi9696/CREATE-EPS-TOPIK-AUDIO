@@ -43,7 +43,7 @@ selected_set_folder = config.get("last_folder", "")
 
 # Fungsi memuat file audio dari path
 def load(file_path):
-    print(f"🔍 Memuat: {file_path}")
+    print(f"🔍 Loading: {file_path}")
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Tidak ditemukan: {file_path}")
     return AudioSegment.from_file(file_path)
@@ -174,6 +174,8 @@ def pilih_set_folder():
     selected = filedialog.askdirectory(title="📁 SET 폴더 선택 (RAW_QUESTION/SET_xx)", initialdir=init_dir)
     if selected:
         selected_set_folder = selected
+        btn_start.configure(state="normal")
+
         label_set.configure(text=os.path.basename(selected))
         config["last_folder"] = selected
         save_config()
@@ -181,12 +183,16 @@ def pilih_set_folder():
 # ==============================
 # Fungsi Mulai Proses
 # ==============================
-def mulai_proses():
+
+
+
+def mulai_proses(event=None):
     global is_canceled
     is_canceled = False
 
-    if not selected_set_folder:
-        messagebox.showwarning("입력 오류", "📁 먼저 SET 폴더를 선택하세요!")
+    if not selected_set_folder or not os.path.exists(selected_set_folder):
+        messagebox.showwarning("경고", "📁 먼저 SET 폴더를 선택하세요!")
+        btn_start.configure(state="normal")
         return
 
     progressbar.set(0)
@@ -231,6 +237,8 @@ label_set.pack()
 
 btn_start = ctk.CTkButton(app, text="▶️ 생성 시작", command=mulai_proses)
 btn_start.pack(pady=10)
+# Nonaktifkan tombol saat awal
+btn_start.configure(state="disabled")
 
 btn_cancel = ctk.CTkButton(app, text="❌ 취소", command=cancel_proses, state="disabled")
 btn_cancel.pack(pady=5)
