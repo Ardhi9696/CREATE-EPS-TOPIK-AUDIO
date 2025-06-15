@@ -1,3 +1,56 @@
+import sys
+import subprocess
+import platform
+import importlib.util
+import shutil
+import webbrowser
+
+# Minimum Python version
+REQUIRED_PYTHON_VERSION = (3, 11, 3)
+
+# Fungsi cek dan buka link jika gagal
+def ensure_dependency(name, install_instruksi, url=None):
+    if importlib.util.find_spec(name) is None:
+        print(f"❌ Modul '{name}' belum terinstal.")
+        print(f"📌 Instruksi: {install_instruksi}")
+        if url:
+            print(f"🌐 Mengarahkan ke: {url}")
+            webbrowser.open(url)
+        sys.exit(1)
+
+# Cek versi Python
+if sys.version_info < REQUIRED_PYTHON_VERSION:
+    print(f"❌ Python {REQUIRED_PYTHON_VERSION[0]}.{REQUIRED_PYTHON_VERSION[1]}.{REQUIRED_PYTHON_VERSION[2]} diperlukan.")
+    print("🌐 Silakan download dari https://www.python.org/downloads/")
+    sys.exit(1)
+
+# Cek pydub
+ensure_dependency("pydub", "pip install pydub", "https://pypi.org/project/pydub/")
+
+# Cek customtkinter
+ensure_dependency("customtkinter", "pip install customtkinter", "https://pypi.org/project/customtkinter/")
+
+# Cek ffmpeg (pakai shutil untuk cek executable)
+if not shutil.which("ffmpeg"):
+    print("❌ 'ffmpeg' belum ditemukan di PATH.")
+    os_type = platform.system()
+    if os_type == "Windows":
+        print("🌐 Download ffmpeg Windows: https://www.gyan.dev/ffmpeg/builds/")
+    elif os_type == "Darwin":
+        print("💡 MacOS: install via Homebrew: brew install ffmpeg")
+        print("🌐 https://formulae.brew.sh/formula/ffmpeg")
+    elif os_type == "Linux":
+        print("💡 Linux (Debian/Ubuntu): sudo apt install ffmpeg")
+    else:
+        print("⚠️ OS tidak dikenali. Silakan install ffmpeg sesuai platform Anda.")
+    sys.exit(1)
+
+# Info sistem
+print(f"🖥️ Sistem Operasi: {platform.system()} {platform.release()}")
+print(f"🐍 Python versi: {sys.version}")
+print("✅ Semua dependensi tersedia.\n")
+
+
 # Import pustaka yang diperlukan
 import customtkinter as ctk          # Untuk membuat GUI modern berbasis Tkinter
 from tkinter import messagebox, filedialog
@@ -80,7 +133,7 @@ def proses_gabungan(set_folder_path, progressbar, status_label, btn_start, btn_c
             btn_cancel.configure(state="disabled")
             return
 
-    # === Validasi file awal ===
+        # === Validasi file awal ===
     status_label.configure(text="📂 파일 유효성 검사 중...")
     progressbar.set(0)
     app.update_idletasks()
@@ -88,13 +141,21 @@ def proses_gabungan(set_folder_path, progressbar, status_label, btn_start, btn_c
     try:
         required_files = [
             "intro.mp3", "outro.mp3", "bell.mp3"
-        ] + [f"nomor/{i}번.mp3" for i in range(21, 41)] + [f"audio_no_pilgan/{j}번.mp3" for j in range(1, 5)] + [
-            os.path.join(set_folder_path, "soal", f"{i}.mp3") for i in range(21, 41)
-        ] + [
-            os.path.join(set_folder_path, "jawaban", "isi", f"{i}_{j}.mp3") for i in range(25, 30) for j in range(1, 5)
-        ]
+            ] + [f"nomor/{i}번.mp3" for i in range(21, 41)] + \
+            [f"audio_no_pilgan/{j}번.mp3" for j in range(1, 5)] + \
+            [os.path.join(set_folder_path, "soal", f"{i}.mp3") for i in range(21, 41)] + \
+            [os.path.join(set_folder_path, "jawaban", "isi", f"{i}_{j}.mp3") for i in range(25, 30) for j in range(1, 5)]
 
         for idx, f in enumerate(required_files):
+            if is_canceled:
+                status_label.configure(text="⛔ 검증이 취소되었습니다.")
+                progressbar.set(0)
+                label_persen.configure(text="")
+                label_nomor.configure(text="")
+                btn_start.configure(state="normal")
+                btn_cancel.configure(state="disabled")
+                return
+
             load(f)
             progress = (idx + 1) / len(required_files)
             progressbar.set(progress)
@@ -106,6 +167,7 @@ def proses_gabungan(set_folder_path, progressbar, status_label, btn_start, btn_c
         btn_start.configure(state="normal")
         btn_cancel.configure(state="disabled")
         return
+
 
     # Reset progress dan label untuk proses utama
     progressbar.set(0)
