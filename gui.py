@@ -1,4 +1,4 @@
-#Cek Dependencies
+# Cek Dependencies
 import sys
 import subprocess
 import platform
@@ -8,6 +8,7 @@ import webbrowser
 
 # Minimum Python version
 REQUIRED_PYTHON_VERSION = (3, 11, 3)
+
 
 # Fungsi cek dan buka link jika gagal
 def ensure_dependency(name, install_instruksi, url=None):
@@ -19,9 +20,12 @@ def ensure_dependency(name, install_instruksi, url=None):
             webbrowser.open(url)
         sys.exit(1)
 
+
 # Cek versi Python
 if sys.version_info < REQUIRED_PYTHON_VERSION:
-    print(f"❌ Python {REQUIRED_PYTHON_VERSION[0]}.{REQUIRED_PYTHON_VERSION[1]}.{REQUIRED_PYTHON_VERSION[2]} diperlukan.")
+    print(
+        f"❌ Python {REQUIRED_PYTHON_VERSION[0]}.{REQUIRED_PYTHON_VERSION[1]}.{REQUIRED_PYTHON_VERSION[2]} diperlukan."
+    )
     print("🌐 Silakan download dari https://www.python.org/downloads/")
     sys.exit(1)
 
@@ -29,7 +33,11 @@ if sys.version_info < REQUIRED_PYTHON_VERSION:
 ensure_dependency("pydub", "pip install pydub", "https://pypi.org/project/pydub/")
 
 # Cek customtkinter
-ensure_dependency("customtkinter", "pip install customtkinter", "https://pypi.org/project/customtkinter/")
+ensure_dependency(
+    "customtkinter",
+    "pip install customtkinter",
+    "https://pypi.org/project/customtkinter/",
+)
 
 # Cek ffmpeg (pakai shutil untuk cek executable)
 if not shutil.which("ffmpeg"):
@@ -53,12 +61,12 @@ print("✅ Semua dependensi tersedia.\n")
 
 
 # Import pustaka yang diperlukan
-import customtkinter as ctk          # Untuk membuat GUI modern berbasis Tkinter
+import customtkinter as ctk  # Untuk membuat GUI modern berbasis Tkinter
 from tkinter import messagebox, filedialog
-import threading                     # Untuk menjalankan proses berat (audio) tanpa membekukan GUI
-from pydub import AudioSegment       # Untuk memproses dan menggabungkan file audio
+import threading  # Untuk menjalankan proses berat (audio) tanpa membekukan GUI
+from pydub import AudioSegment  # Untuk memproses dan menggabungkan file audio
 from pydub.playback import play
-import os                            # Untuk membuat folder dan mengelola file
+import os  # Untuk membuat folder dan mengelola file
 import platform
 import subprocess
 import json
@@ -67,7 +75,7 @@ import json
 CONFIG_FILE = "config.json"
 
 # Set tampilan dan tema customtkinter
-ctk.set_appearance_mode("System")    # Bisa "Dark", "Light", atau "System"
+ctk.set_appearance_mode("System")  # Bisa "Dark", "Light", atau "System"
 ctk.set_default_color_theme("blue")  # Tema warna GUI
 
 # Inisialisasi jendela utama
@@ -76,24 +84,23 @@ app.title("EPS-TOPIK Audio Generator")
 app.geometry("480x520")
 
 # Fungsi untuk memuat konfigurasi tema dan folder
-config = {
-    "appearance": "System",
-    "color_theme": "blue",
-    "last_folder": ""
-}
+config = {"appearance": "System", "color_theme": "blue", "last_folder": ""}
 
 if os.path.exists(CONFIG_FILE):
     with open(CONFIG_FILE, "r") as f:
         config.update(json.load(f))
+
 
 # Fungsi menyimpan konfigurasi
 def save_config():
     with open(CONFIG_FILE, "w") as f:
         json.dump(config, f)
 
+
 # Variabel global
 is_canceled = False
 selected_set_folder = config.get("last_folder", "")
+
 
 # Fungsi memuat file audio dari path
 def load(file_path):
@@ -102,6 +109,7 @@ def load(file_path):
         raise FileNotFoundError(f"Tidak ditemukan: {file_path}")
     return AudioSegment.from_file(file_path)
 
+
 # Fungsi suara notifikasi
 def play_done_sound():
     try:
@@ -109,12 +117,22 @@ def play_done_sound():
             subprocess.run(["afplay", "/System/Library/Sounds/Glass.aiff"])
         elif platform.system() == "Windows":
             import winsound
+
             winsound.MessageBeep()
     except Exception as e:
         print("Gagal memainkan suara notifikasi:", e)
 
+
 # Fungsi utama untuk proses penggabungan audio
-def proses_gabungan(set_folder_path, progressbar, status_label, btn_start, btn_cancel, label_persen, label_nomor):
+def proses_gabungan(
+    set_folder_path,
+    progressbar,
+    status_label,
+    btn_start,
+    btn_cancel,
+    label_persen,
+    label_nomor,
+):
     global is_canceled
 
     satu_detik = AudioSegment.silent(duration=1000)
@@ -128,7 +146,10 @@ def proses_gabungan(set_folder_path, progressbar, status_label, btn_start, btn_c
     output_file = os.path.join(hasil_folder, f"{set_name}.mp3")
 
     if os.path.exists(output_file):
-        if not messagebox.askyesno("파일 덮어쓰기", f"파일 '{set_name}.mp3'이(가) 이미 존재합니다. 덮어쓰시겠습니까?"):
+        if not messagebox.askyesno(
+            "파일 덮어쓰기",
+            f"파일 '{set_name}.mp3'이(가) 이미 존재합니다. 덮어쓰시겠습니까?",
+        ):
             status_label.configure(text="⚠️ 작업이 취소되었습니다.")
             btn_start.configure(state="normal")
             btn_cancel.configure(state="disabled")
@@ -140,12 +161,17 @@ def proses_gabungan(set_folder_path, progressbar, status_label, btn_start, btn_c
     app.update_idletasks()
 
     try:
-        required_files = [
-            "intro.mp3", "outro.mp3", "bell.mp3"
-            ] + [f"nomor/{i}번.mp3" for i in range(21, 41)] + \
-            [f"audio_no_pilgan/{j}번.mp3" for j in range(1, 5)] + \
-            [os.path.join(set_folder_path, "soal", f"{i}.mp3") for i in range(21, 41)] + \
-            [os.path.join(set_folder_path, "jawaban", "isi", f"{i}_{j}.mp3") for i in range(25, 30) for j in range(1, 5)]
+        required_files = (
+            ["intro.mp3", "outro.mp3", "bell.mp3"]
+            + [f"nomor/{i}번.mp3" for i in range(21, 41)]
+            + [f"audio_no_pilgan/{j}번.mp3" for j in range(1, 5)]
+            + [os.path.join(set_folder_path, "soal", f"{i}.mp3") for i in range(21, 41)]
+            + [
+                os.path.join(set_folder_path, "jawaban", "isi", f"{i}_{j}.mp3")
+                for i in range(25, 30)
+                for j in range(1, 5)
+            ]
+        )
 
         for idx, f in enumerate(required_files):
             if is_canceled:
@@ -168,7 +194,6 @@ def proses_gabungan(set_folder_path, progressbar, status_label, btn_start, btn_c
         btn_start.configure(state="normal")
         btn_cancel.configure(state="disabled")
         return
-
 
     # Reset progress dan label untuk proses utama
     progressbar.set(0)
@@ -205,12 +230,16 @@ def proses_gabungan(set_folder_path, progressbar, status_label, btn_start, btn_c
             output += soal_audio + satu_detik
             for j in range(1, 5):
                 nomor_jawab = load(f"audio_no_pilgan/{j}번.mp3")
-                isi_jawab = load(os.path.join(set_folder_path, "jawaban", "isi", f"{nomor}_{j}.mp3"))
+                isi_jawab = load(
+                    os.path.join(set_folder_path, "jawaban", "isi", f"{nomor}_{j}.mp3")
+                )
                 output += nomor_jawab + satu_detik + isi_jawab + satu_detik
             output += soal_audio + satu_detik
             for j in range(1, 5):
                 nomor_jawab = load(f"audio_no_pilgan/{j}번.mp3")
-                isi_jawab = load(os.path.join(set_folder_path, "jawaban", "isi", f"{nomor}_{j}.mp3"))
+                isi_jawab = load(
+                    os.path.join(set_folder_path, "jawaban", "isi", f"{nomor}_{j}.mp3")
+                )
                 output += nomor_jawab + satu_detik + isi_jawab + satu_detik
             output += jeda_5_detik if nomor < 30 else jeda_10_detik
         else:
@@ -228,13 +257,16 @@ def proses_gabungan(set_folder_path, progressbar, status_label, btn_start, btn_c
     play_done_sound()
     print(f"🎉 Selesai: {output_file}")
 
+
 # ==============================
 # Fungsi Pilih Folder SET_xx
 # ==============================
 def pilih_set_folder():
     global selected_set_folder
     init_dir = config.get("last_folder") or os.getcwd()
-    selected = filedialog.askdirectory(title="📁 SET 폴더 선택 (RAW_QUESTION/SET_xx)", initialdir=init_dir)
+    selected = filedialog.askdirectory(
+        title="📁 SET 폴더 선택 (RAW_QUESTION/SET_xx)", initialdir=init_dir
+    )
     if selected:
         selected_set_folder = selected
         btn_start.configure(state="normal")
@@ -243,10 +275,10 @@ def pilih_set_folder():
         config["last_folder"] = selected
         save_config()
 
+
 # ==============================
 # Fungsi Mulai Proses
 # ==============================
-
 
 
 def mulai_proses(event=None):
@@ -267,9 +299,18 @@ def mulai_proses(event=None):
 
     threading.Thread(
         target=proses_gabungan,
-        args=(selected_set_folder, progressbar, status_label, btn_start, btn_cancel, label_persen, label_nomor),
-        daemon=True
+        args=(
+            selected_set_folder,
+            progressbar,
+            status_label,
+            btn_start,
+            btn_cancel,
+            label_persen,
+            label_nomor,
+        ),
+        daemon=True,
     ).start()
+
 
 # ==============================
 # Fungsi Cancel Proses
@@ -280,6 +321,7 @@ def cancel_proses():
         is_canceled = True
         status_label.configure(text="⏳ 취소 중...")
 
+
 # ==============================
 # Fungsi Saat Menutup Aplikasi
 # ==============================
@@ -287,6 +329,7 @@ def on_closing():
     if messagebox.askyesno("종료 확인", "작업을 종료하시겠습니까?"):
         save_config()
         app.destroy()
+
 
 # ==============================
 # === UI Layout ===

@@ -2,6 +2,7 @@ import sys
 import pandas as pd
 import json
 import os
+from datetime import datetime
 from PyQt5.QtWidgets import (
     QApplication,
     QWidget,
@@ -50,10 +51,10 @@ class SoalInput(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("EPS-TOPIK Bank Soal Input (PyQt5)")
-        self.setGeometry(
-            100, 100, 1400, 800
-        )  # Diperbesar untuk tampilan yang lebih baik
-        self.unsaved = False
+        self.setGeometry(100, 100, 1400, 800)
+
+        # Diperbesar untuk tampilan yang lebih baik
+        self.unsaved = True
         self.edit_mode = False
         self.file_path = "bank_soal.json"
         self.all_data = []
@@ -483,53 +484,88 @@ class SoalInput(QWidget):
                 )
                 return
 
-            path, _ = QFileDialog.getSaveFileName(
-                self, "Simpan Excel", "", "Excel Files (*.xlsx)"
-            )
+            # Buat folder "Excel" jika belum ada
+            excel_folder = os.path.join(os.getcwd(), "Excel")
+            if not os.path.exists(excel_folder):
+                os.makedirs(excel_folder)
 
-            if not path:
-                return
+            # Buat nama file dengan timestamp
+            timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+            filename = f"Bank_Soal_{timestamp}.xlsx"
+            file_path = os.path.join(excel_folder, filename)
 
-            # Prepare data
+            # Siapkan data
             rows = []
             for soal in self.all_data:
                 row = {
-                    "ID": soal["id"],
-                    "Nomor": soal["nomor"],
-                    "Tipe": soal["tipe"],
-                    "Petunjuk": soal["petunjuk"],
-                    "Soal": soal["soal"],
-                    "Kunci": soal["kunci"],
+                    "ID": soal.get("id", ""),
+                    "Nomor": soal.get("nomor", ""),
+                    "Tipe": soal.get("tipe", ""),
+                    "Petunjuk": soal.get("petunjuk", ""),
+                    "Soal": soal.get("soal", ""),
                 }
 
-                # Add options
+                # Tambahkan Opsi
                 for i in range(4):
                     row[f"Opsi {i+1}"] = (
-                        soal["opsi"][i] if i < len(soal["opsi"]) else ""
+                        soal.get("opsi", [""] * 4)[i]
+                        if i < len(soal.get("opsi", []))
+                        else ""
                     )
 
-                # Add transcripts if listening
-                if soal["tipe"] == "listening":
+                # Tambahkan Kunci (setelah opsi)
+                row["Kunci"] = soal.get("kunci", "")
+
+                # Tambahkan Transkrip jika listening
+                if soal.get("tipe") == "listening":
                     row["Transkrip Soal"] = soal.get("transkrip_soal", "")
                     for i in range(4):
                         row[f"Transkrip Jawaban {i+1}"] = (
-                            soal["transkrip_jawaban"][i]
+                            soal.get("transkrip_jawaban", [""] * 4)[i]
                             if i < len(soal.get("transkrip_jawaban", []))
                             else ""
                         )
 
                 rows.append(row)
 
-            # Create DataFrame and save
+            # Buat DataFrame
             df = pd.DataFrame(rows)
-            df.to_excel(path, index=False)
 
+            # Atur urutan kolom
+            ordered_columns = [
+                "ID",
+                "Nomor",
+                "Tipe",
+                "Petunjuk",
+                "Soal",
+                "Opsi 1",
+                "Opsi 2",
+                "Opsi 3",
+                "Opsi 4",
+                "Kunci",
+            ]
+
+            # Tambahkan kolom transkrip jika ada
+            if any("Transkrip Soal" in r for r in rows):
+                ordered_columns.append("Transkrip Soal")
+                for i in range(4):
+                    ordered_columns.append(f"Transkrip Jawaban {i+1}")
+
+            # Terapkan urutan kolom (dengan ignore jika ada kolom tidak tersedia)
+            df = df.reindex(columns=ordered_columns)
+
+            # Simpan ke Excel
+            df.to_excel(file_path, index=False)
+
+            # Tampilkan notifikasi sukses
             QMessageBox.information(
-                self, "Berhasil", f"Data berhasil diekspor ke:\n{path}"
+                self, "Berhasil", f"File berhasil disimpan di:\n{file_path}"
             )
 
         except Exception as e:
-            QMessageBox.critical(self, "Error", f"Gagal mengekspor data:\n{str(e)}")
+            QMessageBox.critical(
+                self, "Gagal Menyimpan", f"Terjadi kesalahan:\n{str(e)}"
+            )
 
     def closeEvent(self, event):
         if self.unsaved:
