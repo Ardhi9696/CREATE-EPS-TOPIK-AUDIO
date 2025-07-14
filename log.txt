@@ -1,0 +1,261 @@
+[2025-07-14 13:02:34] ✅ Semua dependensi tersedia.
+[2025-07-14 13:02:34] 🎧 EPS-TOPIK Audio Generator (CLI Mode) dijalankan
+[2025-07-14 13:02:50] ❌ Folder tidak valid.
+[2025-07-14 13:02:58] ✅ Semua dependensi tersedia.
+[2025-07-14 13:02:58] 🎧 EPS-TOPIK Audio Generator (CLI Mode) dijalankan
+[2025-07-14 13:03:35] 🚀 Memulai proses gabungan untuk: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:03:45] 🔍 Memvalidasi semua file yang dibutuhkan...
+[2025-07-14 13:04:00] ✅ Validasi berhasil. Mulai penggabungan...
+[2025-07-14 13:04:00] ▶️ Menggabungkan soal 21 (1/20)
+[2025-07-14 13:04:01] ▶️ Menggabungkan soal 22 (2/20)
+[2025-07-14 13:04:01] ▶️ Menggabungkan soal 23 (3/20)
+[2025-07-14 13:04:02] ▶️ Menggabungkan soal 24 (4/20)
+[2025-07-14 13:04:03] ▶️ Menggabungkan soal 25 (5/20)
+[2025-07-14 13:04:07] ▶️ Menggabungkan soal 26 (6/20)
+[2025-07-14 13:04:12] ▶️ Menggabungkan soal 27 (7/20)
+[2025-07-14 13:04:16] ▶️ Menggabungkan soal 28 (8/20)
+[2025-07-14 13:04:21] ▶️ Menggabungkan soal 29 (9/20)
+[2025-07-14 13:04:25] ▶️ Menggabungkan soal 30 (10/20)
+[2025-07-14 13:04:26] ▶️ Menggabungkan soal 31 (11/20)
+[2025-07-14 13:04:27] ▶️ Menggabungkan soal 32 (12/20)
+[2025-07-14 13:04:28] ▶️ Menggabungkan soal 33 (13/20)
+[2025-07-14 13:04:29] ▶️ Menggabungkan soal 34 (14/20)
+[2025-07-14 13:04:30] ▶️ Menggabungkan soal 35 (15/20)
+[2025-07-14 13:04:30] ▶️ Menggabungkan soal 36 (16/20)
+[2025-07-14 13:04:31] ▶️ Menggabungkan soal 37 (17/20)
+[2025-07-14 13:04:32] ▶️ Menggabungkan soal 38 (18/20)
+[2025-07-14 13:04:33] ▶️ Menggabungkan soal 39 (19/20)
+[2025-07-14 13:04:34] ▶️ Menggabungkan soal 40 (20/20)
+[2025-07-14 13:05:05] ✅ Selesai. File disimpan: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/Hasil/SET_43.mp3
+[2025-07-14 13:07:39] ✅ Semua dependensi tersedia.
+[2025-07-14 13:09:05] ❌ Folder tidak ditemukan.
+[2025-07-14 13:09:08] 👋 Program ditutup.
+[2025-07-14 13:09:20] ✅ Semua dependensi tersedia.
+[2025-07-14 13:09:39] 📂 Folder SET dipilih: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_01
+[2025-07-14 13:09:50] 🚀 Mulai proses SET: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_01
+[2025-07-14 13:09:54] 🔍 Validasi file...
+[2025-07-14 13:10:10] ▶️ Proses soal 21 (1/20)
+[2025-07-14 13:10:11] ▶️ Proses soal 22 (2/20)
+[2025-07-14 13:10:11] ▶️ Proses soal 23 (3/20)
+[2025-07-14 13:10:12] ▶️ Proses soal 24 (4/20)
+[2025-07-14 13:10:13] ▶️ Proses soal 25 (5/20)
+[2025-07-14 13:10:17] ▶️ Proses soal 26 (6/20)
+[2025-07-14 13:10:22] ▶️ Proses soal 27 (7/20)
+[2025-07-14 13:10:27] ▶️ Proses soal 28 (8/20)
+[2025-07-14 13:10:31] ▶️ Proses soal 29 (9/20)
+[2025-07-14 13:10:36] ▶️ Proses soal 30 (10/20)
+[2025-07-14 13:10:37] ▶️ Proses soal 31 (11/20)
+[2025-07-14 13:10:38] ▶️ Proses soal 32 (12/20)
+[2025-07-14 13:10:39] ▶️ Proses soal 33 (13/20)
+[2025-07-14 13:10:40] ▶️ Proses soal 34 (14/20)
+[2025-07-14 13:10:41] ▶️ Proses soal 35 (15/20)
+[2025-07-14 13:10:42] ▶️ Proses soal 36 (16/20)
+[2025-07-14 13:10:43] ▶️ Proses soal 37 (17/20)
+[2025-07-14 13:10:43] ▶️ Proses soal 38 (18/20)
+[2025-07-14 13:10:44] ▶️ Proses soal 39 (19/20)
+[2025-07-14 13:10:45] ▶️ Proses soal 40 (20/20)
+[2025-07-14 13:11:14] ✅ File selesai: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/Hasil/SET_01.mp3
+[2025-07-14 13:15:31] 👋 Program ditutup.
+[2025-07-14 13:15:33] ✅ Semua dependensi tersedia.
+[2025-07-14 13:15:53] 📂 Folder SET dipilih: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:16:13] 🚀 Mulai proses SET: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:16:13] 🔍 Validasi file...
+[2025-07-14 13:16:28] ▶️ Proses soal 21 (1/20)
+[2025-07-14 13:16:29] ▶️ Proses soal 22 (2/20)
+[2025-07-14 13:16:30] ▶️ Proses soal 23 (3/20)
+[2025-07-14 13:16:30] ▶️ Proses soal 24 (4/20)
+[2025-07-14 13:16:31] ▶️ Proses soal 25 (5/20)
+[2025-07-14 13:16:36] ▶️ Proses soal 26 (6/20)
+[2025-07-14 13:16:41] ▶️ Proses soal 27 (7/20)
+[2025-07-14 13:16:46] ▶️ Proses soal 28 (8/20)
+[2025-07-14 13:16:51] ▶️ Proses soal 29 (9/20)
+[2025-07-14 13:16:57] ▶️ Proses soal 30 (10/20)
+[2025-07-14 13:16:57] ▶️ Proses soal 31 (11/20)
+[2025-07-14 13:16:58] ▶️ Proses soal 32 (12/20)
+[2025-07-14 13:17:00] ▶️ Proses soal 33 (13/20)
+[2025-07-14 13:17:01] ▶️ Proses soal 34 (14/20)
+[2025-07-14 13:17:02] ▶️ Proses soal 35 (15/20)
+[2025-07-14 13:17:02] ▶️ Proses soal 36 (16/20)
+[2025-07-14 13:17:03] ▶️ Proses soal 37 (17/20)
+[2025-07-14 13:17:05] ▶️ Proses soal 38 (18/20)
+[2025-07-14 13:17:06] ▶️ Proses soal 39 (19/20)
+[2025-07-14 13:17:07] ▶️ Proses soal 40 (20/20)
+[2025-07-14 13:17:40] ✅ File selesai: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/Hasil/SET_43.mp3
+[2025-07-14 13:18:13] 👋 Program ditutup.
+[2025-07-14 13:18:21] ✅ Semua dependensi tersedia.
+[2025-07-14 13:18:47] 📂 Folder SET dipilih: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_01
+[2025-07-14 13:18:52] 🚀 Mulai proses SET: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_01
+[2025-07-14 13:18:52] 🔍 Validasi file...
+[2025-07-14 13:19:08] ▶️ Proses soal 21 (1/20)
+[2025-07-14 13:19:08] ▶️ Proses soal 22 (2/20)
+[2025-07-14 13:19:09] ▶️ Proses soal 23 (3/20)
+[2025-07-14 13:19:10] ▶️ Proses soal 24 (4/20)
+[2025-07-14 13:19:11] ▶️ Proses soal 25 (5/20)
+[2025-07-14 13:19:15] ▶️ Proses soal 26 (6/20)
+[2025-07-14 13:19:20] ▶️ Proses soal 27 (7/20)
+[2025-07-14 13:19:25] ▶️ Proses soal 28 (8/20)
+[2025-07-14 13:19:29] ▶️ Proses soal 29 (9/20)
+[2025-07-14 13:19:34] ▶️ Proses soal 30 (10/20)
+[2025-07-14 13:19:35] ▶️ Proses soal 31 (11/20)
+[2025-07-14 13:19:36] ▶️ Proses soal 32 (12/20)
+[2025-07-14 13:19:37] ▶️ Proses soal 33 (13/20)
+[2025-07-14 13:19:37] ▶️ Proses soal 34 (14/20)
+[2025-07-14 13:19:38] ▶️ Proses soal 35 (15/20)
+[2025-07-14 13:19:39] ▶️ Proses soal 36 (16/20)
+[2025-07-14 13:19:40] ▶️ Proses soal 37 (17/20)
+[2025-07-14 13:19:41] ▶️ Proses soal 38 (18/20)
+[2025-07-14 13:19:42] ▶️ Proses soal 39 (19/20)
+[2025-07-14 13:19:43] ▶️ Proses soal 40 (20/20)
+[2025-07-14 13:20:11] ✅ File selesai: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/Hasil/SET_01.mp3
+[2025-07-14 13:20:39] 👋 Program ditutup.
+[2025-07-14 13:26:22] ✅ Semua dependensi tersedia.
+[2025-07-14 13:26:27] 🧹 Folder pilihan dikosongkan.
+[2025-07-14 13:26:43] 📂 Folder SET dipilih: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:26:49] 🚀 Mulai proses SET: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:27:30] ❌ Dibatalkan oleh user.
+[2025-07-14 13:27:46] 🧹 Folder pilihan dikosongkan.
+[2025-07-14 13:28:03] 📂 Folder SET dipilih: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:28:08] 🚀 Mulai proses SET: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:28:19] 🔍 Validasi file...
+[2025-07-14 13:28:34] ▶️ Proses soal 21 (1/20)
+[2025-07-14 13:28:34] ▶️ Proses soal 22 (2/20)
+[2025-07-14 13:28:35] ▶️ Proses soal 23 (3/20)
+[2025-07-14 13:28:36] ▶️ Proses soal 24 (4/20)
+[2025-07-14 13:28:37] ▶️ Proses soal 25 (5/20)
+[2025-07-14 13:28:41] ▶️ Proses soal 26 (6/20)
+[2025-07-14 13:28:46] ▶️ Proses soal 27 (7/20)
+[2025-07-14 13:28:51] ▶️ Proses soal 28 (8/20)
+[2025-07-14 13:28:56] ▶️ Proses soal 29 (9/20)
+[2025-07-14 13:29:01] ❌ Proses dibatalkan.
+[2025-07-14 13:31:40] ⚠️ Tidak ada proses yang berjalan untuk dibatalkan.
+[2025-07-14 13:31:43] 👋 Program ditutup.
+[2025-07-14 13:31:48] ✅ Semua dependensi tersedia.
+[2025-07-14 13:31:55] 🧹 Folder pilihan dikosongkan.
+[2025-07-14 13:32:03] 📂 Folder SET dipilih: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator
+[2025-07-14 13:32:17] 📂 Folder SET dipilih: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_01
+[2025-07-14 13:32:21] 🚀 Mulai proses SET: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_01
+[2025-07-14 13:34:52] ✅ Semua dependensi tersedia.
+[2025-07-14 13:34:58] 🧹 Folder pilihan dikosongkan.
+[2025-07-14 13:35:01] ⚠️ Folder belum dipilih atau tidak valid.
+[2025-07-14 13:35:03] ⚠️ Folder belum dipilih atau tidak valid.
+[2025-07-14 13:35:03] ⚠️ Folder belum dipilih atau tidak valid.
+[2025-07-14 13:35:04] ⚠️ Folder belum dipilih atau tidak valid.
+[2025-07-14 13:35:04] ⚠️ Folder belum dipilih atau tidak valid.
+[2025-07-14 13:35:04] ⚠️ Folder belum dipilih atau tidak valid.
+[2025-07-14 13:35:04] ⚠️ Folder belum dipilih atau tidak valid.
+[2025-07-14 13:35:05] ⚠️ Folder belum dipilih atau tidak valid.
+[2025-07-14 13:35:23] 📂 Folder SET dipilih: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:35:33] ❌ Tidak ada folder yang dipilih.
+[2025-07-14 13:35:37] 🚀 Mulai proses SET: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:35:39] 🔍 Validasi file...
+[2025-07-14 13:35:55] ▶️ Proses soal 21 (1/20)
+[2025-07-14 13:35:56] ▶️ Proses soal 22 (2/20)
+[2025-07-14 13:35:57] ▶️ Proses soal 23 (3/20)
+[2025-07-14 13:35:57] ▶️ Proses soal 24 (4/20)
+[2025-07-14 13:35:58] ▶️ Proses soal 25 (5/20)
+[2025-07-14 13:36:03] ▶️ Proses soal 26 (6/20)
+[2025-07-14 13:36:08] ▶️ Proses soal 27 (7/20)
+[2025-07-14 13:36:12] ▶️ Proses soal 28 (8/20)
+[2025-07-14 13:36:17] ▶️ Proses soal 29 (9/20)
+[2025-07-14 13:36:22] ▶️ Proses soal 30 (10/20)
+[2025-07-14 13:36:23] ▶️ Proses soal 31 (11/20)
+[2025-07-14 13:36:24] ▶️ Proses soal 32 (12/20)
+[2025-07-14 13:36:25] ▶️ Proses soal 33 (13/20)
+[2025-07-14 13:36:26] ▶️ Proses soal 34 (14/20)
+[2025-07-14 13:36:27] ▶️ Proses soal 35 (15/20)
+[2025-07-14 13:36:28] ▶️ Proses soal 36 (16/20)
+[2025-07-14 13:36:29] ▶️ Proses soal 37 (17/20)
+[2025-07-14 13:36:30] ▶️ Proses soal 38 (18/20)
+[2025-07-14 13:36:31] ▶️ Proses soal 39 (19/20)
+[2025-07-14 13:36:32] ▶️ Proses soal 40 (20/20)
+[2025-07-14 13:37:04] ✅ File selesai: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/Hasil/SET_43.mp3
+[2025-07-14 13:37:38] 👋 Program ditutup.
+[2025-07-14 13:37:43] ✅ Semua dependensi tersedia.
+[2025-07-14 13:37:50] 🧹 Folder pilihan dikosongkan.
+[2025-07-14 13:38:03] 📂 Folder SET dipilih: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:38:07] 🧹 Folder pilihan dikosongkan.
+[2025-07-14 13:38:17] 📂 Folder SET dipilih: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:38:29] ❌ Tidak ada folder yang dipilih.
+[2025-07-14 13:38:44] 🚀 Mulai proses SET: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:38:48] ❌ Dibatalkan oleh user.
+[2025-07-14 13:39:05] 🚀 Mulai proses SET: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 13:39:05] 🔍 Validasi file...
+[2025-07-14 13:39:21] ▶️ Proses soal 21 (1/20)
+[2025-07-14 13:39:21] ▶️ Proses soal 22 (2/20)
+[2025-07-14 13:39:22] ▶️ Proses soal 23 (3/20)
+[2025-07-14 13:39:23] ▶️ Proses soal 24 (4/20)
+[2025-07-14 13:39:24] ▶️ Proses soal 25 (5/20)
+[2025-07-14 13:39:28] ▶️ Proses soal 26 (6/20)
+[2025-07-14 13:39:33] ▶️ Proses soal 27 (7/20)
+[2025-07-14 13:39:38] ▶️ Proses soal 28 (8/20)
+[2025-07-14 13:39:43] ▶️ Proses soal 29 (9/20)
+[2025-07-14 13:39:48] ▶️ Proses soal 30 (10/20)
+[2025-07-14 13:39:48] ▶️ Proses soal 31 (11/20)
+[2025-07-14 13:39:49] ▶️ Proses soal 32 (12/20)
+[2025-07-14 13:39:50] ▶️ Proses soal 33 (13/20)
+[2025-07-14 13:39:51] ▶️ Proses soal 34 (14/20)
+[2025-07-14 13:39:52] ▶️ Proses soal 35 (15/20)
+[2025-07-14 13:39:53] ▶️ Proses soal 36 (16/20)
+[2025-07-14 13:39:54] ▶️ Proses soal 37 (17/20)
+[2025-07-14 13:39:55] ▶️ Proses soal 38 (18/20)
+[2025-07-14 13:39:56] ▶️ Proses soal 39 (19/20)
+[2025-07-14 13:39:57] ▶️ Proses soal 40 (20/20)
+[2025-07-14 13:40:29] ✅ File selesai: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/Hasil/SET_43.mp3
+[2025-07-14 13:46:26] 👋 Program ditutup.
+[2025-07-14 13:46:48] 📂 Folder SET dipilih: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_01
+[2025-07-14 13:46:54] 🚀 Mulai proses SET: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_01
+[2025-07-14 13:46:56] 🔍 Validasi file...
+[2025-07-14 13:47:12] ▶️ Proses soal 21 (1/20)
+[2025-07-14 13:47:13] ▶️ Proses soal 22 (2/20)
+[2025-07-14 13:47:13] ▶️ Proses soal 23 (3/20)
+[2025-07-14 13:47:14] ▶️ Proses soal 24 (4/20)
+[2025-07-14 13:47:15] ▶️ Proses soal 25 (5/20)
+[2025-07-14 13:47:20] ▶️ Proses soal 26 (6/20)
+[2025-07-14 13:47:24] ▶️ Proses soal 27 (7/20)
+[2025-07-14 13:47:29] ▶️ Proses soal 28 (8/20)
+[2025-07-14 13:47:34] ▶️ Proses soal 29 (9/20)
+[2025-07-14 13:47:39] ▶️ Proses soal 30 (10/20)
+[2025-07-14 13:47:40] ▶️ Proses soal 31 (11/20)
+[2025-07-14 13:47:41] ▶️ Proses soal 32 (12/20)
+[2025-07-14 13:47:42] ▶️ Proses soal 33 (13/20)
+[2025-07-14 13:47:43] ▶️ Proses soal 34 (14/20)
+[2025-07-14 13:47:44] ▶️ Proses soal 35 (15/20)
+[2025-07-14 13:47:45] ▶️ Proses soal 36 (16/20)
+[2025-07-14 13:47:45] ▶️ Proses soal 37 (17/20)
+[2025-07-14 13:47:46] ▶️ Proses soal 38 (18/20)
+[2025-07-14 13:47:47] ▶️ Proses soal 39 (19/20)
+[2025-07-14 13:47:48] ▶️ Proses soal 40 (20/20)
+[2025-07-14 13:48:16] ✅ File selesai: /Users/leeheungso/Desktop/EPS-Topik AUDIO Generator/Hasil/SET_01.mp3
+[2025-07-14 13:49:30] 👋 Program ditutup.
+[2025-07-14 13:53:45] 🖥️ Mendeteksi sistem operasi dan lingkungan Python...
+[2025-07-14 13:53:45] 📌 OS Terdeteksi: Darwin 24.5.0 (x86_64)
+[2025-07-14 13:53:45] 🐍 Python Versi: 3.11.3 (CPython)
+[2025-07-14 13:53:45] ✅ Python memenuhi syarat (≥ 3.11.3)
+[2025-07-14 13:53:45] 📦 Mengecek dependencies Python...
+[2025-07-14 13:53:45] ✅ Modul 'pydub' tersedia.
+[2025-07-14 13:53:45] 🎵 Mengecek keberadaan 'ffmpeg'...
+[2025-07-14 13:53:45] ✅ 'ffmpeg' ditemukan di PATH.
+[2025-07-14 13:53:45] ✅ Semua dependensi telah dipenuhi.
+[2025-07-14 13:54:55] 👋 Program ditutup.
+[2025-07-14 13:54:58] 🖥️ Mendeteksi sistem operasi dan environment Python...
+[2025-07-14 13:54:58] 📌 OS Terdeteksi: Darwin 24.5.0 (x86_64)
+[2025-07-14 13:54:58] 🐍 Python Versi: 3.11.3 (CPython)
+[2025-07-14 13:54:58] ✅ Python memenuhi syarat (≥ 3.11.3)
+[2025-07-14 13:54:58] 📦 Mengecek dependencies Python...
+[2025-07-14 13:54:58] ✅ Modul 'pydub' tersedia.
+[2025-07-14 13:54:58] 🎵 Mengecek keberadaan 'ffmpeg'...
+[2025-07-14 13:54:58] ✅ 'ffmpeg' ditemukan di PATH.
+[2025-07-14 13:54:58] ✅ Semua dependensi telah dipenuhi.
+[2025-07-14 13:55:06] 👋 Program ditutup.
+[2025-07-14 13:55:12] 🖥️ Mendeteksi sistem operasi dan environment Python...
+[2025-07-14 13:55:12] 📌 OS Terdeteksi: Darwin 24.5.0 (x86_64)
+[2025-07-14 13:55:12] 🐍 Python Versi: 3.11.3 (CPython)
+[2025-07-14 13:55:12] ✅ Python memenuhi syarat (≥ 3.11.3)
+[2025-07-14 13:55:12] 📦 Mengecek dependencies Python...
+[2025-07-14 13:55:12] ✅ Modul 'pydub' tersedia.
+[2025-07-14 13:55:12] 🎵 Mengecek keberadaan 'ffmpeg'...
+[2025-07-14 13:55:12] ✅ 'ffmpeg' ditemukan di PATH.
+[2025-07-14 13:55:12] ✅ Semua dependensi telah dipenuhi.
+[2025-07-14 13:55:31] 🧹 Folder pilihan dikosongkan.
+[2025-07-14 13:55:37] ⚠️ Anda belum memilih folder SET. Silakan pilih opsi 1 terlebih dahulu.
+[2025-07-14 13:55:58] 👋 Program ditutup.
