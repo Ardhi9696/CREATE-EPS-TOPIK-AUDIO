@@ -154,6 +154,8 @@ def progress_bar(current, total, width=30):
 
 def cek_batal():
     global is_canceled
+    if platform.system() == "Windows":
+        return  # Skip pada Windows karena select tidak mendukung stdin
     if sys.stdin in select.select([sys.stdin], [], [], 0)[0]:
         line = sys.stdin.readline().strip().upper()
         if line == "X":
@@ -165,6 +167,7 @@ def cek_batal():
             root.destroy()
             if confirm:
                 is_canceled = True
+
 
 
 # ========== Proses Gabungan ==========

@@ -259,3 +259,59 @@
 [2025-07-14 13:55:31] 🧹 Folder pilihan dikosongkan.
 [2025-07-14 13:55:37] ⚠️ Anda belum memilih folder SET. Silakan pilih opsi 1 terlebih dahulu.
 [2025-07-14 13:55:58] 👋 Program ditutup.
+[2025-07-14 14:06:45] 🖥️ Mendeteksi sistem operasi dan environment Python...
+[2025-07-14 14:06:45] 📌 OS Terdeteksi: Windows 10 (AMD64)
+[2025-07-14 14:06:45] 🐍 Python Versi: 3.11.3 (CPython)
+[2025-07-14 14:06:45] ✅ Python memenuhi syarat (≥ 3.11.3)
+[2025-07-14 14:06:45] 📦 Mengecek dependencies Python...
+[2025-07-14 14:06:45] ✅ Modul 'pydub' tersedia.
+[2025-07-14 14:06:45] 🎵 Mengecek keberadaan 'ffmpeg'...
+[2025-07-14 14:06:45] ✅ 'ffmpeg' ditemukan di PATH.
+[2025-07-14 14:06:45] ✅ Semua dependensi telah dipenuhi.
+[2025-07-14 14:07:10] 📂 Folder SET dipilih: C:/Users/ardhi/OneDrive/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 14:07:15] 🚀 Mulai proses SET: C:/Users/ardhi/OneDrive/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 14:07:18] 🔍 Validasi file...
+[2025-07-14 14:07:18] ❌ Validasi gagal: [WinError 10038] An operation was attempted on something that is not a socket
+[2025-07-14 14:07:51] 🚀 Mulai proses SET: C:/Users/ardhi/OneDrive/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 14:07:54] 🔍 Validasi file...
+[2025-07-14 14:07:54] ❌ Validasi gagal: [WinError 10038] An operation was attempted on something that is not a socket
+[2025-07-14 14:09:55] 🚀 Mulai proses SET: C:/Users/ardhi/OneDrive/Desktop/EPS-Topik AUDIO Generator/RAW_QUESTION/SET_43
+[2025-07-14 14:09:57] ❌ Dibatalkan oleh user.
+[2025-07-14 14:10:05] 🧹 Folder pilihan dikosongkan.
+[2025-07-14 14:11:22] 📂 Folder SET dipilih: C:/Users/ardhi/Downloads/Music/RAW_QUESTION/SET_43
+[2025-07-14 14:11:27] 🚀 Mulai proses SET: C:/Users/ardhi/Downloads/Music/RAW_QUESTION/SET_43
+[2025-07-14 14:11:27] 🔍 Validasi file...
+[2025-07-14 14:11:27] ❌ Validasi gagal: [WinError 10038] An operation was attempted on something that is not a socket
+[2025-07-14 14:15:34] 👋 Program ditutup.
+[2025-07-14 14:15:44] 🖥️ Mendeteksi sistem operasi dan environment Python...
+[2025-07-14 14:15:44] 📌 OS Terdeteksi: Windows 10 (AMD64)
+[2025-07-14 14:15:44] 🐍 Python Versi: 3.11.3 (CPython)
+[2025-07-14 14:15:44] ✅ Python memenuhi syarat (≥ 3.11.3)
+[2025-07-14 14:15:44] 📦 Mengecek dependencies Python...
+[2025-07-14 14:15:44] ✅ Modul 'pydub' tersedia.
+[2025-07-14 14:15:44] 🎵 Mengecek keberadaan 'ffmpeg'...
+[2025-07-14 14:15:44] ✅ 'ffmpeg' ditemukan di PATH.
+[2025-07-14 14:15:44] ✅ Semua dependensi telah dipenuhi.
+[2025-07-14 14:15:51] 🚀 Mulai proses SET: C:/Users/ardhi/Downloads/Music/RAW_QUESTION/SET_43
+[2025-07-14 14:15:51] 🔍 Validasi file...
+[2025-07-14 14:16:03] ▶️ Proses soal 21 (1/20)
+[2025-07-14 14:16:04] ▶️ Proses soal 22 (2/20)
+[2025-07-14 14:16:04] ▶️ Proses soal 23 (3/20)
+[2025-07-14 14:16:05] ▶️ Proses soal 24 (4/20)
+[2025-07-14 14:16:05] ▶️ Proses soal 25 (5/20)
+[2025-07-14 14:16:08] ▶️ Proses soal 26 (6/20)
+[2025-07-14 14:16:12] ▶️ Proses soal 27 (7/20)
+[2025-07-14 14:16:16] ▶️ Proses soal 28 (8/20)
+[2025-07-14 14:16:19] ▶️ Proses soal 29 (9/20)
+[2025-07-14 14:16:23] ▶️ Proses soal 30 (10/20)
+[2025-07-14 14:16:24] ▶️ Proses soal 31 (11/20)
+[2025-07-14 14:16:25] ▶️ Proses soal 32 (12/20)
+[2025-07-14 14:16:26] ▶️ Proses soal 33 (13/20)
+[2025-07-14 14:16:26] ▶️ Proses soal 34 (14/20)
+[2025-07-14 14:16:27] ▶️ Proses soal 35 (15/20)
+[2025-07-14 14:16:28] ▶️ Proses soal 36 (16/20)
+[2025-07-14 14:16:29] ▶️ Proses soal 37 (17/20)
+[2025-07-14 14:16:29] ▶️ Proses soal 38 (18/20)
+[2025-07-14 14:16:30] ▶️ Proses soal 39 (19/20)
+[2025-07-14 14:16:32] ▶️ Proses soal 40 (20/20)
+[2025-07-14 14:16:42] ✅ File selesai: C:/Users/ardhi/Downloads/Music\Hasil\SET_43.mp3
